@@ -44,7 +44,7 @@ grid = VIDA.imagepixels(
     ),
     )
 intmap = VIDA.intensitymap(mdl, grid)
-
+intmap ./= flux(intmap)
 imageviz(intmap)
 
 outpath = joinpath(dirname(@__DIR__), "data", "fits")
