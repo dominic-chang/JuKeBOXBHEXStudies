@@ -25,9 +25,9 @@ npix = 400
     p2=4.0, # Inner power-law index of emissivity profile
     χ=-π/2, # Azimuthal angle of fluid flow in ZAMO
     ι=0.6, # Inclination of magnetic field in ZAMO
-    βv=0.9,
-    σ=0.7,
-    η=-1e0π,
+    βv=0.9, # Speed of fluid flow in ZAMO
+    σ=0.7, # spectral index of the electron distribution
+    η=-1e0π, # Azimuthal angle of the magnetic field in ZAMO
 )
 
 mdl = modify(JuKeBOX(θ), Stretch(μas2rad(θ.m_d), μas2rad(θ.m_d)), Rotate(θ.pa*π/180))
